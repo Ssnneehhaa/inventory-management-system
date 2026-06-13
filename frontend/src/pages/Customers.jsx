@@ -17,7 +17,7 @@ function Customers() {
   const fetchCustomers = async () => {
 
     const response = await axios.get(
-      "http://127.0.0.1:8000/customers/"
+      "https://inventory-management-system-8hwk.onrender.com/customers/"
     );
 
     setCustomers(response.data);
@@ -31,7 +31,7 @@ function Customers() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/customers/",
+        "https://inventory-management-system-8hwk.onrender.com/customers/",
         formData
       );
 

@@ -21,7 +21,7 @@ function Orders() {
 
   const fetchOrders = async () => {
     const response = await axios.get(
-      "http://127.0.0.1:8000/orders/"
+      "https://inventory-management-system-8hwk.onrender.com/orders/"
     );
 
     setOrders(response.data);
@@ -29,7 +29,7 @@ function Orders() {
 
   const fetchCustomers = async () => {
     const response = await axios.get(
-      "http://127.0.0.1:8000/customers/"
+      "https://inventory-management-system-8hwk.onrender.com/orders/"
     );
 
     setCustomers(response.data);
@@ -37,7 +37,7 @@ function Orders() {
 
   const fetchProducts = async () => {
     const response = await axios.get(
-      "http://127.0.0.1:8000/products/"
+      "https://inventory-management-system-8hwk.onrender.com/products/"
     );
 
     setProducts(response.data);
@@ -50,7 +50,7 @@ function Orders() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/orders/",
+        "https://inventory-management-system-8hwk.onrender.com/orders/",
         {
           customer_id: Number(formData.customer_id),
           product_id: Number(formData.product_id),

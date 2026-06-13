@@ -18,7 +18,7 @@ function Products() {
 
   const fetchProducts = async () => {
     const response = await axios.get(
-      "http://127.0.0.1:8000/products/"
+        "https://inventory-management-system-8hwk.onrender.com/products/"
     );
 
     setProducts(response.data);
@@ -38,7 +38,7 @@ function Products() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/products/",
+          "https://inventory-management-system-8hwk.onrender.com/products/",
         {
           ...formData,
           price: Number(formData.price),
